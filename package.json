@@ -1,0 +1,26 @@
+{
+  "name": "testpromoblock",
+  "version": "1.0.0",
+  "description": "Promo Block for Goods",
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-plumber": "^1.2.1"
+  },
+  "scripts": {
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "build": "gulp css",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "dependencies": {
+    "gulp-plumber": "^1.2.1"
+  }
+}
