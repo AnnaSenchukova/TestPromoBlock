@@ -1,0 +1,26 @@
+.rules {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rules__item {
+  width: 35%;
+
+  @include font-black(36px);
+}
+
+.rules__description {
+  @include font-regular();
+
+  &--action {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
