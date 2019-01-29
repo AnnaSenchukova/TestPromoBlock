@@ -1,19 +1,41 @@
 .rules {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 10;
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 170px;
+
 }
 
 .rules__item {
   width: 35%;
+  max-width: 322px;
 
   @include font-black(36px);
+
+  &:first-child {
+    margin-right: 190px ;
+  }
+
+  &--registration {
+    order: 2;
+    margin-right: 197px;
+  }
+
+  &:nth-last-child(2) {
+    max-width: 250px;
+  }
+
+  &:last-child {
+    order: 3;
+    max-width: 250px;
+  }
+
+  &:nth-child(2n-1) {
+    margin-bottom: 63px;
+  }
 }
 
 .rules__description {
@@ -22,9 +44,13 @@
   @include font-regular(20px);
   text-transform: uppercase;
 
+  &--action {
+    display: inline-block;
+    vertical-align: text-top;
+  }
+
   &--small {
-    text-transform: none;
     @include font-regular(20px);
-    text-transform: uppercase;
+    text-transform: none;
   }
 }
