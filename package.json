@@ -6,9 +6,13 @@
     "autoprefixer": "^9.4.6",
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-plumber": "^1.2.1"
+    "gulp-rename": "^1.4.0",
+    "npx": "^10.2.0",
+    "gulp-sass": "^4.0.2"
   },
   "scripts": {
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
@@ -20,7 +24,20 @@
     "IE 11",
     "Firefox ESR"
   ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
+  "engines": {
+    "node": "8.12"
+  },
   "dependencies": {
+    "del": "^3.0.0",
+    "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "^1.2.1"
   }
 }

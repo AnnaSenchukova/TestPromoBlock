@@ -1,0 +1,107 @@
+.prize__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.prize__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 32%;
+  margin-bottom: 47px;
+
+  &--date {
+    order: 2;
+
+    &::before {
+      content: "";
+
+      order: 3;
+      display: block;
+      width: 142px;
+      height: 131px;
+      margin-top: 63px;
+      margin-left: 10px;
+
+      background-image: url("../img/post.png");
+
+      @media (min-resolution: $retina-dpi2), (min-resolution: $retina-dppx2) {
+        background-image: url("../img/post@2x.png");
+        background-size: 142px auto;
+      }
+
+      @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
+        background-image: url("../img/post@3x.png");
+        background-size: 142px auto;
+      }
+    }
+  }
+
+  &--cinema::before {
+    content: "";
+
+    order: 3;
+
+    display: block;
+    width: 188px;
+    height: 169px;
+    margin-top: 59px;
+    margin-right: 10px;
+
+    background-image: url("../img/hue-saturation-21.png");
+
+    @media (min-resolution: $retina-dpi2), (min-resolution: $retina-dppx2) {
+      background-image: url("../img/hue-saturation-21@2x.png");
+      background-size: 188px auto;
+    }
+
+    @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/hue-saturation-21@3x.png");
+      background-size: 188px auto;
+    }
+  }
+
+  &--journey::before {
+    content: "";
+
+    order: 3;
+    display: block;
+    width: 236px;
+    height: 309px;
+    margin-top: 47px;
+    margin-right: 10px;
+
+    background-image: url("../img/ibiza-2017.png");
+
+    @media (min-resolution: $retina-dpi2), (min-resolution: $retina-dppx2) {
+      background-image: url("../img/ibiza-2017@2x.png");
+      background-size: 236px auto;
+    }
+
+    @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/ibiza-2017@3x.png");
+      background-size: 236px auto;
+    }
+  }
+}
+
+.prize__caption {
+  order: 2;
+  margin: 0;
+
+  @include font-regular();
+}
+
+.prize__description {
+  margin: 0;
+  padding-bottom: 16px;
+
+  @include font-black(36px);
+}

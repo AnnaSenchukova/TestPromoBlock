@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="193" height="113" viewBox="0 0 193 113">
+    <defs>
+        <filter id="a" width="113%" height="122.9%" x="-6.5%" y="-11.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="b" d="M0 0h185v105H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g filter="url(#a)" transform="translate(4 2)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#b"/>
+            </mask>
+            <path fill="#FEFEFE" d="M133.906 0H68.594C40.493 0 17.5 22.992 17.5 51.094v1.35c-.056.385-.059.87 0 1.462 0 2.315.17 4.59.473 6.824.263 8.303-1.032 13.762-4.535 23.02C9.063 95.313 0 102.5 0 102.5s9.17 2.87 20.108-.88c7.055-2.418 11.75-6.982 14.197-9.917C43.389 99.955 55.43 105 68.594 105h65.312C162.008 105 185 82.008 185 53.906v-2.812C185 22.992 162.008 0 133.906 0" mask="url(#c)"/>
+        </g>
+        <text fill="#6D6D6D" font-family="GraphikLCG-Black, Graphik LCG" font-size="48" font-weight="700" transform="translate(4 2)">
+            <tspan x="72.376" y="75">. . .</tspan>
+        </text>
+    </g>
+</svg>

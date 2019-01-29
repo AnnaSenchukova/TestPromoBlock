@@ -1,0 +1,149 @@
+.durex {
+  position: relative;
+
+  width: auto;
+  max-width: 2560px;
+  margin: 0 auto;
+  padding-top: 47px;
+  padding-bottom: 90px;
+
+  background-color: #1d0c4b;
+  background-image: url("../img/durex-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  overflow: hidden;
+
+  @media screen and (min-resolution: $retina-dpi2), (min-resolution: $retina-dppx3) {
+    background-image: url("../img/durex-2@2x.jpg");
+    background-size: cover;
+  }
+
+  @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
+    background-image: url("../img/durex-2@2x.jpg");
+    background-size: cover;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    min-width: 235px;
+    min-height: 567px;
+
+    background-image: url("../img/men.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 15.5% auto;
+
+    @media screen and (min-resolution: $retina-dpi2), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/men@2x.png");
+      background-size: 15.5% auto;
+    }
+
+    @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/men@3x.png");
+      background-size: 15.5% auto;
+    }
+  }
+
+  &::after {
+    min-width: 242px;
+    min-height: 527px;
+
+    background-image: url("../img/woumen.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 17% auto;
+
+    @media screen and (min-resolution: $retina-dpi2), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/woumen@2x.png");
+      background-size: 17% auto;
+    }
+
+    @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/woumen@3x.png");
+      background-size: 17% auto;
+    }
+  }
+}
+
+.durex__wrapper {
+  width: 100%;
+
+  &--decoration {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 100%;
+      right: 65px;
+
+      display: block;
+      width: 203px;
+      height: 113px;
+      margin-top: 30px;
+
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      right: 65px;
+
+      background-image: url("../img/group-2.svg");
+    }
+
+    &::before {
+      left: 65px;
+
+      background-image: url("../img/group-4.svg");
+    }
+  }
+
+  &--link {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.durex__product-image {
+  display: block;
+
+  position: absolute;
+  top: -18px;
+  left: 47.4%;
+
+  transform: translateX(-50%);
+}
+
+.durex__link {
+  display: block;
+  padding-top: 19px;
+  padding-bottom: 17px;
+  padding-left: 38px;
+  padding-right: 35px;
+
+  @include font-medium();
+
+  background-color: $white;
+  border-radius: 30px;
+  @include shadow-button();
+
+  &:not(:last-child) {
+    margin-right: 100px;
+  }
+}
