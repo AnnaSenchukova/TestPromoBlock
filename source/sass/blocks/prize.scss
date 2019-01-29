@@ -1,23 +1,21 @@
 .prize__title {
   position: relative;
 
-  margin-bottom: 173px;
+  margin-bottom: 180px;
 
 
 
   &::after {
     content: "";
     position: absolute;
-    top: 100%;
-    left: 50%;
-
+    top: 102%;
+    left: 49.4%;
     display: block;
-    width: 50px;
-    height: 50px;
-
+    width: 45px;
+    height: 45px;
     background-color: transparent;
-    border-bottom: 15px solid $white;
-    border-left: 15px solid $white;
+    border-bottom: 12px solid $white;
+    border-left: 12px solid $white;
 
     transform: rotate(-45deg) translateX(-50%);
   }
@@ -40,7 +38,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 32%;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 
   &--date {
     order: 2;
@@ -54,7 +52,8 @@
     display: block;
     width: 188px;
     height: 169px;
-    margin-top: 40px;
+    margin-top: 59px;
+    margin-right: 10px;
 
     background-image: url("../img/hue-saturation-21.png");
 
@@ -76,7 +75,8 @@
     display: block;
     width: 142px;
     height: 131px;
-    margin-top: 40px;
+    margin-top: 63px;
+    margin-left: 10px;
 
     background-image: url("../img/post.png");
 
@@ -98,7 +98,8 @@
     display: block;
     width: 236px;
     height: 309px;
-    margin-top: 40px;
+    margin-top: 47px;
+    margin-right: 10px;
 
     background-image: url("../img/ibiza-2017.png");
 
@@ -109,7 +110,7 @@
 
     @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
       background-image: url("../img/ibiza-2017@3x.png");
-      background-size: 142px auto;
+      background-size: 236px auto;
     }
   }
 }
@@ -123,7 +124,7 @@
 
 .prize__description {
   margin: 0;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
 
   @include font-black(36px);
 }

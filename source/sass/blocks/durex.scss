@@ -2,7 +2,11 @@
   position: relative;
 
   width: auto;
-  padding-top: 41px;
+  max-width: 2560px;
+  margin: 0 auto;
+  padding-top: 47px;
+  padding-bottom: 90px;
+  overflow: hidden;
 
   background-color: #1d0c4b;
   background-image: url("../img/durex-2.jpg");
@@ -24,9 +28,8 @@
     content: "";
 
     position: absolute;
-    top: 63px;
+    top: 0;
     left: 0;
-    z-index: 5;
 
     display: block;
     width: 100%;
@@ -57,7 +60,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 5;
 
     display: block;
     width: 100%;
@@ -95,12 +97,12 @@
 
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 65px;
 
     display: block;
     width: 203px;
     height: 113px;
-    margin-top: 25px;
+    margin-top: 30px;
 
     background-image: url("../img/group-2.svg");
     background-repeat: no-repeat;
@@ -111,12 +113,12 @@
 
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 65px;
 
     display: block;
     width: 203px;
     height: 113px;
-    margin-top: 25px;
+    margin-top: 30px;
 
     background-image: url("../img/group-4.svg");
     background-repeat: no-repeat;
@@ -130,7 +132,7 @@
   align-items: center;
   width: 100%;
   margin: 0;
-  margin-bottom: 90px;
+  margin-bottom: 86px;
 
   text-align: center;
 
@@ -139,6 +141,7 @@
   &--lowercase {
     display: block;
     margin-bottom: 0;
+    padding-top: 10px;
 
     font-size: 36px;
   }
@@ -146,42 +149,39 @@
 
 .durex__logo {
   display: block;
-  padding-left: 10px;
+  margin-left: 20px;
 }
 
 .durex__wrapper {
   display: flex;
   justify-content: center;
-
-  &--link {
-    justify-content: space-around;
-    padding-bottom: 90px;
-  }
 }
 
 .durex__product-image {
   display: block;
 
   position: absolute;
-  top: -25px;
-  left: 46%;
+  top: -18px;
+  left: 47.4%;
 
   transform: translateX(-50%);
 }
 
 .durex__link {
   display: block;
-  margin-bottom: 10px;
-  padding-top: 14px;
-  padding-bottom: 21px;
-  padding-left: 37px;
-  padding-right: 25px;
+  padding-top: 19px;
+  padding-bottom: 17px;
+  padding-left: 38px;
+  padding-right: 35px;
 
   @include font-medium();
 
-
+  background-color: $white;
   border-radius: 30px;
   @include shadow-button();
 
-  background-color: $white;
+  &:not(:last-child) {
+    margin-right: 100px;
+  }
+
 }

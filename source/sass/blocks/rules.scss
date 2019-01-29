@@ -5,7 +5,8 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  margin-bottom: 170px;
+  margin-bottom: 165px;
+  padding-left: 56px;
 
 }
 
@@ -16,12 +17,13 @@
   @include font-black(36px);
 
   &:first-child {
-    margin-right: 190px ;
+    margin-right: 280px ;
   }
 
   &--registration {
     order: 2;
-    margin-right: 197px;
+    margin-right: 265px;
+    padding-top: 4px;
   }
 
   &:nth-last-child(2) {
@@ -31,6 +33,7 @@
   &:last-child {
     order: 3;
     max-width: 250px;
+    padding-top: 9px;
   }
 
   &:nth-child(2n-1) {
@@ -47,6 +50,7 @@
   &--action {
     display: inline-block;
     vertical-align: text-top;
+    padding-top: 5px;
   }
 
   &--small {
