@@ -7,7 +7,6 @@
   margin: 0 auto;
   margin-bottom: 165px;
   padding-left: 56px;
-
 }
 
 .rules__item {
@@ -16,8 +15,8 @@
 
   @include font-black(36px);
 
-  &:first-child {
-    margin-right: 280px ;
+  &--bye {
+    margin-right: 280px;
   }
 
   &--registration {
@@ -26,11 +25,11 @@
     padding-top: 4px;
   }
 
-  &:nth-last-child(2) {
+  &--participate {
     max-width: 250px;
   }
 
-  &:last-child {
+  &--prize {
     order: 3;
     max-width: 250px;
     padding-top: 9px;
