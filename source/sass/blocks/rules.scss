@@ -17,10 +17,14 @@
 }
 
 .rules__description {
-  @include font-regular();
+  margin: 0;
 
-  &--action {
+  @include font-regular(20px);
+  text-transform: uppercase;
+
+  &--small {
+    text-transform: none;
+    @include font-regular(20px);
     text-transform: uppercase;
-    font-weight: 500;
   }
 }
