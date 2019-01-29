@@ -1,6 +1,8 @@
 .durex {
   position: relative;
+
   width: auto;
+  padding-top: 41px;
 
   background-color: #1d0c4b;
   background-image: url("../img/durex-2.jpg");
@@ -17,12 +19,108 @@
     background-image: url("../img/durex-2@2x.jpg");
     background-size: cover;
   }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 63px;
+    left: 0;
+    z-index: 5;
+
+    display: block;
+    width: 100%;
+    min-width: 235px;
+    height: 100%;
+    min-height: 567px;
+
+    background-image: url("../img/men.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 15.5% auto;
+
+
+    @media screen and (min-resolution: $retina-dpi2), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/men@2x.png");
+      background-size: 15.5% auto;
+    }
+
+    @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/men@3x.png");
+      background-size: 15.5% auto;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    display: block;
+    width: 100%;
+    min-width: 242px;
+    height: 100%;
+    min-height: 527px;
+
+    background-image: url("../img/woumen.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 17% auto;
+
+
+    @media screen and (min-resolution: $retina-dpi2), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/woumen@2x.png");
+      background-size: 17% auto;
+    }
+
+    @media screen and (min-resolution: $retina-dpi3), (min-resolution: $retina-dppx3) {
+      background-image: url("../img/woumen@3x.png");
+      background-size: 17% auto;
+    }
+  }
+
+
 }
 
 .durex__wrapper-decoration {
   position: relative;
 
   width: 100%;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    display: block;
+    width: 203px;
+    height: 113px;
+    margin-top: 25px;
+
+    background-image: url("../img/group-2.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: block;
+    width: 203px;
+    height: 113px;
+    margin-top: 25px;
+
+    background-image: url("../img/group-4.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .durex__title{
